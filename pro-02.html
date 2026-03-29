@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Build log: Project A — Anvesh Wagh, Maker Portfolio."
+      content="Build log: Project B - TBD — Anvesh Wagh, Maker Portfolio."
     />
-    <title>Project A — Build log | Anvesh Wagh</title>
+    <title>Project B - TBD — Build Log | Anvesh Wagh</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -37,89 +37,427 @@
         },
       };
     </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body class="min-h-screen bg-neutral-50 text-neutral-900 antialiased">
+    <!-- Skip link (accessibility) -->
     <a
       href="#main"
       class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:border focus:border-neutral-400 focus:bg-white focus:px-3 focus:py-2 focus:text-sm"
-      >Skip to main content</a>
-
+      >Skip to main content</a
+    >
+    <!-- ============================================================
+         GLOBAL HEADER
+         Identical structure to index.html.
+         Nav is replaced with a single '← Back to Logbook' link.
+    ============================================================ -->
     <header class="border-b border-neutral-300 bg-white">
       <div
         class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8"
       >
+        <!-- Wordmark -->
         <div class="flex flex-col gap-1">
-          <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">Maker Portfolio</p>
-          <a href="index.html" class="text-lg font-semibold tracking-tight text-neutral-900 no-underline hover:underline">Anvesh Wagh</a>
+          <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">
+            Maker Portfolio
+          </p>
+          <a
+            href="index.html"
+            class="text-lg font-semibold tracking-tight text-neutral-900 outline-none transition-colors duration-200 hover:text-neutral-600 focus-visible:ring-2 focus-visible:ring-neutral-500"
+            >Anvesh Wagh</a
+          >
         </div>
+        <!-- Single back-navigation link -->
         <nav aria-label="Primary">
-          <ul class="flex flex-wrap gap-x-6 gap-y-2 font-mono text-sm text-neutral-700">
-            <li><a class="underline-offset-4 hover:underline" href="index.html#hero">Overview</a></li>
-            <li><a class="underline-offset-4 hover:underline" href="index.html#workspace">Workspace</a></li>
-            <li><a class="underline-offset-4 hover:underline" href="index.html#logbook">Projects</a></li>
-            <li><a class="underline-offset-4 hover:underline" href="index.html#contact">Contact</a></li>
-          </ul>
+          <a
+            href="index.html#logbook"
+            class="inline-block rounded-md px-3 py-1.5 font-mono text-sm text-neutral-700 outline-none transition-all duration-200 hover:bg-neutral-900 hover:text-white focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            >← Back to Logbook</a
+          >
         </nav>
       </div>
     </header>
-
-    <main id="main" class="border-b border-neutral-300 bg-white">
-      <div class="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
-        <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">
-          <a href="index.html#logbook" class="text-neutral-600 underline-offset-4 hover:underline">← All projects</a>
-        </p>
-        <header class="mt-6 border-b border-neutral-200 pb-8">
-          <p class="font-mono text-xs text-neutral-500">Rev. 0 · ID: IO-PRJ-001</p>
-          <h1 class="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">Project A — TBD</h1>
-          <p class="mt-4 text-base leading-relaxed text-neutral-700">
-            Reserved for a future robotics build. Replace this page with objectives, timeline, and outcomes as the
-            project takes shape.
+    <!-- ============================================================
+         MAIN CONTENT
+    ============================================================ -->
+    <main id="main">
+      <!-- ----------------------------------------------------------
+           PROJECT HERO
+      ---------------------------------------------------------- -->
+      <section
+        id="project-hero"
+        class="border-b border-neutral-300 bg-white"
+        aria-labelledby="project-title"
+      >
+        <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+          <!-- Breadcrumb / eyebrow -->
+          <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">
+            Build Log &mdash; <span class="text-neutral-400">Rev. 0 &nbsp;&middot;&nbsp; ID: IO-PRJ-002</span>
           </p>
-        </header>
-
-        <section class="mt-10" aria-labelledby="pro02-goals">
-          <h2 id="pro02-goals" class="font-mono text-xs font-semibold uppercase tracking-wider text-neutral-600">
-            Goals
-          </h2>
-          <p class="mt-3 text-sm leading-relaxed text-neutral-700">
-            [Placeholder] State the problem, success criteria, and constraints (space, budget, time).
+          <!-- Title & subtitle -->
+          <h1
+            id="project-title"
+            class="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl"
+          >
+            Project B - TBD
+          </h1>
+          <p class="mt-4 max-w-3xl text-base leading-relaxed text-neutral-700 sm:text-lg">
+            [One-sentence high-level summary of what this project is, what problem it solves, and what it ultimately produces.]
           </p>
-        </section>
-
-        <section class="mt-10" aria-labelledby="pro02-hardware">
-          <h2 id="pro02-hardware" class="font-mono text-xs font-semibold uppercase tracking-wider text-neutral-600">
-            Hardware &amp; BOM
+          <!-- Hero image / video placeholder (16:9) -->
+          <figure class="mt-10 overflow-hidden rounded border border-neutral-300 bg-neutral-100">
+            <div
+              class="flex aspect-video w-full items-center justify-center text-center"
+              aria-label="Main project image placeholder"
+            >
+              <div class="flex flex-col items-center gap-2">
+                <svg
+                  class="h-10 w-10 text-neutral-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3 20.25h18M3.75 4.5h16.5a.75.75 0 01.75.75v11.25a.75.75 0 01-.75.75H3.75a.75.75 0 01-.75-.75V5.25a.75.75 0 01.75-.75z"
+                  />
+                </svg>
+                <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">
+                  Main Project Image (16:9)
+                </p>
+                <p class="max-w-xs text-center text-sm text-neutral-400">
+                  Replace with a photo of the final build, a render, or a short video embed.
+                </p>
+              </div>
+            </div>
+            <figcaption class="border-t border-neutral-200 bg-neutral-50 px-4 py-2 font-mono text-xs text-neutral-400">
+              Fig. 1 — [Caption describing what the image shows.]
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- ----------------------------------------------------------
+           SPLIT CONTENT GRID
+           Desktop: left 1/3 sidebar + right 2/3 body.
+           Mobile: stacks, sidebar shown first so specs are up top.
+      ---------------------------------------------------------- -->
+      <section
+        id="project-content"
+        class="bg-neutral-50"
+        aria-labelledby="project-content-heading"
+      >
+        <!-- Visually hidden heading for landmark navigation -->
+        <h2 id="project-content-heading" class="sr-only">Project Details</h2>
+        <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 gap-10 lg:grid-cols-3 lg:gap-16">
+            <!-- ======================================================
+                 LEFT COLUMN — QUICK SPECS SIDEBAR
+            ====================================================== -->
+            <aside
+              class="lg:col-span-1"
+              aria-labelledby="specs-heading"
+            >
+              <!-- Sticky wrapper so sidebar scrolls with content up to a point -->
+              <div class="lg:sticky lg:top-8">
+                <p class="font-mono text-xs font-semibold uppercase tracking-widest text-neutral-500">
+                  Quick Specs
+                </p>
+                <!-- Spec data list -->
+                <dl class="mt-4 divide-y divide-neutral-200 rounded border border-neutral-300 bg-white">
+                  <div class="flex items-baseline justify-between gap-4 px-4 py-3">
+                    <dt class="font-mono text-xs font-medium uppercase tracking-wider text-neutral-500 shrink-0">
+                      Spec 1
+                    </dt>
+                    <dd class="text-right font-mono text-sm text-neutral-800">
+                      [Value]
+                    </dd>
+                  </div>
+                  <div class="flex items-baseline justify-between gap-4 px-4 py-3">
+                    <dt class="font-mono text-xs font-medium uppercase tracking-wider text-neutral-500 shrink-0">
+                      Spec 2
+                    </dt>
+                    <dd class="text-right font-mono text-sm text-neutral-800">
+                      [Value]
+                    </dd>
+                  </div>
+                  <div class="flex items-baseline justify-between gap-4 px-4 py-3">
+                    <dt class="font-mono text-xs font-medium uppercase tracking-wider text-neutral-500 shrink-0">
+                      Spec 3
+                    </dt>
+                    <dd class="text-right font-mono text-sm text-neutral-800">
+                      [Value]
+                    </dd>
+                  </div>
+                  <div class="flex items-baseline justify-between gap-4 px-4 py-3">
+                    <dt class="font-mono text-xs font-medium uppercase tracking-wider text-neutral-500 shrink-0">
+                      Spec 4
+                    </dt>
+                    <dd class="text-right font-mono text-sm text-neutral-800">
+                      [Value]
+                    </dd>
+                  </div>
+                </dl>
+                <!-- Status badge -->
+                <div class="mt-4 flex items-center gap-2">
+                  <span
+                    class="rounded border border-neutral-300 bg-neutral-100 px-2 py-0.5 font-mono text-xs font-medium text-neutral-700"
+                    >Status: Active</span
+                  >
+                </div>
+                <!-- External action links -->
+                <div class="mt-6 flex flex-col gap-3">
+                  <!-- Source Code link -->
+                  <a
+                    href="#"
+                    class="inline-flex w-full items-center justify-between rounded border border-neutral-300 bg-white px-4 py-2.5 font-mono text-sm text-neutral-700 outline-none transition-all duration-200 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span>View Source Code</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                  <!-- CAD / MakerWorld link (optional — remove if not applicable) -->
+                  <a
+                    href="#"
+                    class="inline-flex w-full items-center justify-between rounded border border-neutral-300 bg-white px-4 py-2.5 font-mono text-sm text-neutral-700 outline-none transition-all duration-200 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span>CAD on MakerWorld</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div><!-- /sticky wrapper -->
+            </aside>
+            <!-- ======================================================
+                 RIGHT COLUMN — ENGINEERING LOG
+            ====================================================== -->
+            <div
+              class="lg:col-span-2"
+              aria-label="Engineering log"
+            >
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -
+                   Section 1: The Objective
+              - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+              <article
+                id="objective"
+                class="border-b border-neutral-200 pb-10"
+                aria-labelledby="objective-heading"
+              >
+                <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">
+                  01
+                </p>
+                <h3
+                  id="objective-heading"
+                  class="mt-2 text-xl font-semibold tracking-tight sm:text-2xl"
+                >
+                  The Objective
+                </h3>
+                <p class="mt-4 text-sm leading-relaxed text-neutral-700">
+                  [Placeholder — describe the engineering problem this project sets out to solve. State the
+                  success criteria clearly: what does a working version look like? Include the primary
+                  constraints driving the design — budget, physical size, available tooling, or time.]
+                </p>
+                <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+                  [Placeholder — add a second paragraph if needed to cover any background context or
+                  motivation for choosing this particular approach over simpler alternatives.]
+                </p>
+              </article>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -
+                   Section 2: Design & Architecture
+              - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+              <article
+                id="design"
+                class="border-b border-neutral-200 py-10"
+                aria-labelledby="design-heading"
+              >
+                <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">
+                  02
+                </p>
+                <h3
+                  id="design-heading"
+                  class="mt-2 text-xl font-semibold tracking-tight sm:text-2xl"
+                >
+                  Design &amp; Architecture
+                </h3>
+                <p class="mt-4 text-sm leading-relaxed text-neutral-700">
+                  [Placeholder — document the overall system architecture: mechanical layout, electronics
+                  stack, and software structure. Explain the key decisions made in CAD — why certain
+                  geometries, tolerances, or materials were chosen. Reference the specific hardware
+                  components (e.g. MCU, motor driver IC, sensor) and how they interconnect over the
+                  chosen communication bus.]
+                </p>
+                <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+                  [Placeholder — describe any firmware or control architecture decisions. For example:
+                  why a particular control loop topology was selected, how tasks are scheduled, or how
+                  sensor data is filtered before it feeds into the control path.]
+                </p>
+                <!-- Inline image placeholder (16:9) -->
+                <figure class="mt-6 overflow-hidden rounded border border-neutral-300 bg-neutral-100">
+                  <div
+                    class="flex aspect-video w-full items-center justify-center text-center"
+                    aria-label="Design diagram or CAD render placeholder"
+                  >
+                    <div class="flex flex-col items-center gap-2">
+                      <svg
+                        class="h-8 w-8 text-neutral-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3 20.25h18M3.75 4.5h16.5a.75.75 0 01.75.75v11.25a.75.75 0 01-.75.75H3.75a.75.75 0 01-.75-.75V5.25a.75.75 0 01.75-.75z"
+                        />
+                      </svg>
+                      <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">
+                        Image / CAD Render (16:9)
+                      </p>
+                    </div>
+                  </div>
+                  <figcaption
+                    class="border-t border-neutral-200 bg-neutral-50 px-4 py-2 font-mono text-xs text-neutral-400"
+                  >
+                    Fig. 2 — [Caption: schematic, exploded CAD view, or wiring diagram.]
+                  </figcaption>
+                </figure>
+              </article>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -
+                   Section 3: The Core Challenge
+              - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+              <article
+                id="challenge"
+                class="border-b border-neutral-200 py-10"
+                aria-labelledby="challenge-heading"
+              >
+                <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">
+                  03
+                </p>
+                <h3
+                  id="challenge-heading"
+                  class="mt-2 text-xl font-semibold tracking-tight sm:text-2xl"
+                >
+                  The Core Challenge
+                </h3>
+                <p class="mt-4 text-sm leading-relaxed text-neutral-700">
+                  [Placeholder — isolate the single hardest engineering problem encountered during this
+                  build. Be specific: was it a thermal issue, an oscillating control loop, a mechanical
+                  resonance, an I²C addressing conflict, or an unexpected voltage drop under load? Give
+                  the reader enough context to understand why the problem was non-trivial.]
+                </p>
+                <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+                  [Placeholder — describe the diagnostic process and the solution. If the fix involved
+                  changing a hardware parameter (e.g. adding a decoupling capacitor, adjusting PID gains,
+                  re-routing a trace) or a software workaround (e.g. adding sensor fusion, changing
+                  interrupt priority), say so explicitly. State what the measurable improvement was.]
+                </p>
+              </article>
+              <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -
+                   Section 4: Results & Next Steps
+              - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+              <article
+                id="results"
+                class="pt-10"
+                aria-labelledby="results-heading"
+              >
+                <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">
+                  04
+                </p>
+                <h3
+                  id="results-heading"
+                  class="mt-2 text-xl font-semibold tracking-tight sm:text-2xl"
+                >
+                  Results &amp; Next Steps
+                </h3>
+                <p class="mt-4 text-sm leading-relaxed text-neutral-700">
+                  [Placeholder — state the final outcome against the original success criteria. Did the
+                  build meet its targets? Quote any measured figures that are meaningful (e.g. cycle time,
+                  positioning accuracy, current draw, latency). If it did not fully succeed, say so — and
+                  explain why.]
+                </p>
+                <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+                  [Placeholder — list the concrete next iterations or open problems. For example: moving
+                  from a breadboard to a custom PCB, replacing a software PID with a hardware timer, or
+                  running extended stress tests. Keep this grounded — no speculative roadmaps.]
+                </p>
+                <!-- Outcome tags / meta row -->
+                <div class="mt-8 flex flex-wrap gap-2" role="list" aria-label="Outcome tags">
+                  <span
+                    role="listitem"
+                    class="rounded border border-neutral-300 bg-neutral-100 px-2.5 py-1 font-mono text-xs text-neutral-600"
+                    >[Tag: e.g. PCB Fabricated]</span
+                  >
+                  <span
+                    role="listitem"
+                    class="rounded border border-neutral-300 bg-neutral-100 px-2.5 py-1 font-mono text-xs text-neutral-600"
+                    >[Tag: e.g. Firmware v1.0]</span
+                  >
+                  <span
+                    role="listitem"
+                    class="rounded border border-neutral-300 bg-neutral-100 px-2.5 py-1 font-mono text-xs text-neutral-600"
+                    >[Tag: e.g. Field Tested]</span
+                  >
+                </div>
+              </article>
+            </div><!-- /right column -->
+          </div><!-- /grid -->
+        </div>
+      </section>
+      <!-- ----------------------------------------------------------
+           CONTACT FOOTER SECTION
+           Exact copy from index.html.
+      ---------------------------------------------------------- -->
+      <section
+        id="contact"
+        class="border-t border-neutral-300 bg-neutral-50"
+        aria-labelledby="contact-heading"
+      >
+        <div class="mx-auto max-w-6xl px-4 py-7 sm:px-6 lg:px-8">
+          <h2
+            id="contact-heading"
+            class="font-mono text-xs font-semibold uppercase tracking-widest text-neutral-600"
+          >
+            Contact
           </h2>
-          <p class="mt-3 text-sm leading-relaxed text-neutral-700">
-            [Placeholder] Major parts, suppliers, and mechanical/electrical stack—link to a full BOM when ready.
+          <p class="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-700">
+            I am always open to talking about mechatronics, new projects, or anything you want to chat about. Feel free to reach out!
           </p>
-        </section>
-
-        <section class="mt-10" aria-labelledby="pro02-log">
-          <h2 id="pro02-log" class="font-mono text-xs font-semibold uppercase tracking-wider text-neutral-600">
-            Build log
-          </h2>
-          <ol class="mt-4 list-decimal space-y-4 pl-5 text-sm leading-relaxed text-neutral-700">
-            <li>[Placeholder] Iteration note with date.</li>
-            <li>[Placeholder] What failed, what changed, what you learned.</li>
-            <li>[Placeholder] Test results or next steps.</li>
-          </ol>
-        </section>
-
-        <figure class="mt-12 rounded border-2 border-dashed border-neutral-400 bg-neutral-50 p-8 text-center">
-          <figcaption class="font-mono text-xs uppercase tracking-widest text-neutral-500">
-            Media placeholder — photos, CAD, scope traces
-          </figcaption>
-        </figure>
-      </div>
+          <div class="mt-4 flex flex-col gap-2">
+            <a
+              href="mailto:waghanvesh@gmail.com"
+              class="inline-flex w-fit rounded px-2 py-1 font-mono text-sm text-neutral-800 outline-none transition-colors duration-200 hover:bg-neutral-900 hover:text-white focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50"
+              >waghanvesh@gmail.com</a
+            >
+            <a
+              href="tel:+447443792662"
+              class="inline-flex w-fit rounded px-2 py-1 font-mono text-sm text-neutral-800 outline-none transition-colors duration-200 hover:bg-neutral-900 hover:text-white focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50"
+              >+44 7443 792662</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
-
-    <footer class="bg-neutral-50">
-      <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-6 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-        <p class="font-mono text-xs text-neutral-500">© Idea Overflow — build log draft</p>
-        <p class="font-mono text-xs text-neutral-500">
-          <a href="index.html#logbook" class="underline-offset-4 hover:underline">Back to projects</a>
-        </p>
+    <!-- ============================================================
+         GLOBAL FOOTER
+         Exact copy from index.html.
+    ============================================================ -->
+    <footer class="border-t border-neutral-300 bg-white">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-6 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8"
+      >
+        <p class="font-mono text-xs text-neutral-500">© Anvesh Wagh 2026</p>
+        <p class="font-mono text-xs text-neutral-500">Built with a lot of code and coffee.</p>
       </div>
     </footer>
   </body>
