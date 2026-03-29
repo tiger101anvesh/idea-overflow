@@ -1,4 +1,4 @@
-# idea-overflow: Anvesh Wagh | Portfolio & Build Log
+# Anvesh Wagh | Portfolio & Build Log
 
 This repository contains the source code for my personal portfolio and engineering build log. It serves as an open record of my active and completed hardware builds, including mechatronics, custom PCBs, and control theory projects.
 
