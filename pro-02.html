@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Build log: Project A — Anvesh Wagh, Maker Portfolio."
+    />
+    <title>Project A — Build log | Anvesh Wagh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: [
+                "ui-sans-serif",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "Roboto",
+                "Helvetica Neue",
+                "Arial",
+                "sans-serif",
+              ],
+              mono: [
+                "ui-monospace",
+                "SFMono-Regular",
+                "Menlo",
+                "Monaco",
+                "Consolas",
+                "monospace",
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-neutral-50 text-neutral-900 antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:border focus:border-neutral-400 focus:bg-white focus:px-3 focus:py-2 focus:text-sm"
+      >Skip to main content</a>
+
+    <header class="border-b border-neutral-300 bg-white">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8"
+      >
+        <div class="flex flex-col gap-1">
+          <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">Maker Portfolio</p>
+          <a href="index.html" class="text-lg font-semibold tracking-tight text-neutral-900 no-underline hover:underline">Anvesh Wagh</a>
+        </div>
+        <nav aria-label="Primary">
+          <ul class="flex flex-wrap gap-x-6 gap-y-2 font-mono text-sm text-neutral-700">
+            <li><a class="underline-offset-4 hover:underline" href="index.html#hero">Overview</a></li>
+            <li><a class="underline-offset-4 hover:underline" href="index.html#workspace">Workspace</a></li>
+            <li><a class="underline-offset-4 hover:underline" href="index.html#logbook">Projects</a></li>
+            <li><a class="underline-offset-4 hover:underline" href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="border-b border-neutral-300 bg-white">
+      <div class="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
+        <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">
+          <a href="index.html#logbook" class="text-neutral-600 underline-offset-4 hover:underline">← All projects</a>
+        </p>
+        <header class="mt-6 border-b border-neutral-200 pb-8">
+          <p class="font-mono text-xs text-neutral-500">Rev. 0 · ID: IO-PRJ-001</p>
+          <h1 class="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">Project A — TBD</h1>
+          <p class="mt-4 text-base leading-relaxed text-neutral-700">
+            Reserved for a future robotics build. Replace this page with objectives, timeline, and outcomes as the
+            project takes shape.
+          </p>
+        </header>
+
+        <section class="mt-10" aria-labelledby="pro02-goals">
+          <h2 id="pro02-goals" class="font-mono text-xs font-semibold uppercase tracking-wider text-neutral-600">
+            Goals
+          </h2>
+          <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+            [Placeholder] State the problem, success criteria, and constraints (space, budget, time).
+          </p>
+        </section>
+
+        <section class="mt-10" aria-labelledby="pro02-hardware">
+          <h2 id="pro02-hardware" class="font-mono text-xs font-semibold uppercase tracking-wider text-neutral-600">
+            Hardware &amp; BOM
+          </h2>
+          <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+            [Placeholder] Major parts, suppliers, and mechanical/electrical stack—link to a full BOM when ready.
+          </p>
+        </section>
+
+        <section class="mt-10" aria-labelledby="pro02-log">
+          <h2 id="pro02-log" class="font-mono text-xs font-semibold uppercase tracking-wider text-neutral-600">
+            Build log
+          </h2>
+          <ol class="mt-4 list-decimal space-y-4 pl-5 text-sm leading-relaxed text-neutral-700">
+            <li>[Placeholder] Iteration note with date.</li>
+            <li>[Placeholder] What failed, what changed, what you learned.</li>
+            <li>[Placeholder] Test results or next steps.</li>
+          </ol>
+        </section>
+
+        <figure class="mt-12 rounded border-2 border-dashed border-neutral-400 bg-neutral-50 p-8 text-center">
+          <figcaption class="font-mono text-xs uppercase tracking-widest text-neutral-500">
+            Media placeholder — photos, CAD, scope traces
+          </figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <footer class="bg-neutral-50">
+      <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-6 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+        <p class="font-mono text-xs text-neutral-500">© Idea Overflow — build log draft</p>
+        <p class="font-mono text-xs text-neutral-500">
+          <a href="index.html#logbook" class="underline-offset-4 hover:underline">Back to projects</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

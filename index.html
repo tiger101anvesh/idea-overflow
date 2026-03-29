@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anvesh Wagh's engineering portfolio: building a robotics lab from zero inside a bedroom."
+    />
+    <title>Anvesh Wagh — Maker Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: [
+                "ui-sans-serif",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "Roboto",
+                "Helvetica Neue",
+                "Arial",
+                "sans-serif",
+              ],
+              mono: [
+                "ui-monospace",
+                "SFMono-Regular",
+                "Menlo",
+                "Monaco",
+                "Consolas",
+                "monospace",
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-neutral-50 text-neutral-900 antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:border focus:border-neutral-400 focus:bg-white focus:px-3 focus:py-2 focus:text-sm"
+      >Skip to main content</a>
+
+    <header class="border-b border-neutral-300 bg-white">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8"
+      >
+        <div class="flex flex-col gap-1">
+          <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">
+            Maker Portfolio
+          </p>
+          <p class="text-lg font-semibold tracking-tight">Anvesh Wagh</p>
+        </div>
+        <nav aria-label="Primary">
+          <ul class="flex flex-wrap gap-x-1 gap-y-2 font-mono text-sm">
+            <li>
+              <a
+                class="inline-block rounded-md px-3 py-1.5 text-neutral-700 outline-none transition-all duration-200 hover:bg-neutral-900 hover:text-white focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                href="#"
+                >Overview</a>
+            </li>
+            <li>
+              <a
+                class="inline-block rounded-md px-3 py-1.5 text-neutral-700 outline-none transition-all duration-200 hover:bg-neutral-900 hover:text-white focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                href="#workspace"
+                >Workspace</a>
+            </li>
+            <li>
+              <a
+                class="inline-block rounded-md px-3 py-1.5 text-neutral-700 outline-none transition-all duration-200 hover:bg-neutral-900 hover:text-white focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                href="#logbook"
+                >Logbook</a>
+            </li>
+            <li>
+              <a
+                class="inline-block rounded-md px-3 py-1.5 text-neutral-700 outline-none transition-all duration-200 hover:bg-neutral-900 hover:text-white focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                href="#contact"
+                >Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero: intro + feature highlights + image placeholder -->
+      <section
+        id="hero"
+        class="border-b border-neutral-300 bg-white"
+        aria-labelledby="hero-heading"
+      >
+        <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+          <div class="grid gap-10 lg:grid-cols-12 lg:gap-12">
+            <div class="lg:col-span-7">
+              <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">
+                Constraint-led engineering
+              </p>
+              <h1 id="hero-heading" class="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+                Anvesh Wagh
+              </h1>
+              <p class="mt-4 max-w-2xl text-base leading-relaxed text-neutral-700 sm:text-lg">
+                Hi! I'm Anvesh, a high school student who loves building robots just for the fun of it. This portfolio is an open logbook of my projects, documenting how I design, code, and build custom hardware entirely inside my bedroom.
+              </p>
+              <ul class="mt-8 grid gap-3 sm:grid-cols-2" role="list">
+                <li class="flex gap-3 rounded border border-neutral-300 bg-neutral-50 p-4">
+                  <span class="font-mono text-xs text-neutral-500" aria-hidden="true">01</span>
+                  <span class="text-sm text-neutral-800">I predominantly focus on mechatronics, custom PCBs, and control theory.</span>
+                </li>
+                <li class="flex gap-3 rounded border border-neutral-300 bg-neutral-50 p-4">
+                  <span class="font-mono text-xs text-neutral-500" aria-hidden="true">02</span>
+                  <span class="text-sm text-neutral-800">I use 3D printing, Python and hand-soldered electronics to make my projects tangible.</span>
+                </li>
+                <li class="flex gap-3 rounded border border-neutral-300 bg-neutral-50 p-4 sm:col-span-2">
+                  <span class="font-mono text-xs text-neutral-500" aria-hidden="true">03</span>
+                  <span class="text-sm text-neutral-800">Building hardware is rarely perfect on the first try. This site is an open logbook documenting the real-world process of trial, error, and final working iterations.</span>
+                </li>
+              </ul>
+            </div>
+            <aside
+              class="flex items-center justify-center lg:col-span-5 lg:items-start lg:justify-center lg:pt-1"
+              aria-label="Portrait or hero image placeholder"
+            >
+              <figure
+                class="flex aspect-square w-80 max-w-full shrink-0 flex-col items-center justify-center gap-2 rounded border-2 border-dashed border-neutral-400 bg-neutral-50 p-4"
+              >
+                <figcaption class="text-center font-mono text-xs uppercase tracking-widest text-neutral-500">
+                  Image placeholder
+                </figcaption>
+                <p class="max-w-[12rem] text-center text-sm leading-relaxed text-neutral-600">
+                  Add a photo or project visual here.
+                </p>
+              </figure>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Workspace / MakerSpace -->
+      <section
+        id="workspace"
+        class="border-b border-neutral-300 bg-neutral-50"
+        aria-labelledby="workspace-heading"
+      >
+        <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+          <header class="max-w-3xl">
+            <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">MakerSpace</p>
+            <h2 id="workspace-heading" class="mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">
+              My Workspace
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-neutral-700">
+              I don't have access to a massive university machine shop. This tiny bedroom is my design studio, assembly line, and testing ground. It forces me to be incredibly deliberate about the tools I buy, how I manage safety, and how I design my robots to be manufactured at home.
+            </p>
+          </header>
+
+          <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <article class="rounded border border-neutral-300 bg-white p-6">
+              <h3 class="font-mono text-xs font-semibold uppercase tracking-wider text-neutral-600">
+                3D Printing
+              </h3>
+              <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+                I use 3D printing to rapidly iterate on mechanical components, and having a micro-factory on my desk means I can turn a late-night idea into a prototype I can test by morning. You can see my CAD here on
+                <a
+                  href="https://makerworld.com/en/@Anvesh_Wagh"
+                  class="font-medium text-neutral-900 underline decoration-neutral-400 underline-offset-2 transition hover:decoration-neutral-700"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >MakerWorld</a>.
+              </p>
+            </article>
+            <article class="rounded border border-neutral-300 bg-white p-6">
+              <h3 class="font-mono text-xs font-semibold uppercase tracking-wider text-neutral-600">
+                Desktop CNC &amp; PCBs
+              </h3>
+              <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+                To bypass long shipping times for electronics, I am building a custom micro-CNC router to mill 2-layer copper-clad boards directly in my room. I could also upgrade this later to cut actual materials.
+              </p>
+            </article>
+            <article class="rounded border border-neutral-300 bg-white p-6">
+              <h3 class="font-mono text-xs font-semibold uppercase tracking-wider text-neutral-600">
+                Electronics &amp; Soldering
+              </h3>
+              <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+                This is my electronics bench. I have a simple yet optimised soldering setup where I put all the custom boards together. I use this space to wire up microcontrollers, test my sensors, and troubleshoot circuits before putting them into the robots.
+              </p>
+            </article>
+            <article class="rounded border border-neutral-300 bg-white p-6">
+              <h3 class="font-mono text-xs font-semibold uppercase tracking-wider text-neutral-600">
+                Software &amp; Code
+              </h3>
+              <p class="mt-3 text-sm leading-relaxed text-neutral-700">
+                Hardware is only half the battle. I write the firmware for my robots using Python, and I use version control to keep track of my iterations. You can look through all the source code for my builds on my
+                <a
+                  href="https://github.com/tiger101anvesh"
+                  class="font-medium text-neutral-900 underline decoration-neutral-400 underline-offset-2 transition hover:decoration-neutral-700"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >GitHub</a>.
+              </p>
+            </article>
+          </div>
+
+          <figure class="mt-10 rounded border-2 border-dashed border-neutral-400 bg-white p-8 text-center">
+            <figcaption class="font-mono text-xs uppercase tracking-widest text-neutral-500">
+              Media placeholder — workspace photos / layout / timelapse
+            </figcaption>
+            <p class="mx-auto mt-3 max-w-lg text-sm text-neutral-600">
+              Room for a floor plan, bench photos, or short clips once you have them—keep captions factual about what each shot shows.
+            </p>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Projects: spec-sheet cards, scalable grid -->
+      <section
+        id="logbook"
+        class="border-b border-neutral-300 bg-white"
+        aria-labelledby="logbook-heading"
+      >
+        <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+          <header class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div class="max-w-2xl">
+              <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">Gallery</p>
+              <h2 id="logbook-heading" class="mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">
+                Project Logbook
+              </h2>
+              <p class="mt-3 text-base text-neutral-700">
+                This is a quick look at what's currently on my desk. From custom electronics to mechanical assemblies, this is an open record of my trial, error, and final working prototypes.
+              </p>
+            </div>
+            <p class="font-mono text-xs text-neutral-500">
+              Sorted by completion date (oldest to newest).
+            </p>
+          </header>
+
+          <ul
+            class="mt-12 grid list-none gap-6 sm:grid-cols-2 lg:grid-cols-3"
+            role="list"
+          >
+            <!-- Project C — completed (oldest in logbook order) -->
+            <li>
+              <a
+                href="pro-01.html"
+                class="group block h-full rounded no-underline text-inherit outline-none ring-offset-2 transition focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                aria-labelledby="proj-c-title"
+              >
+                <article
+                  class="flex h-full flex-col overflow-hidden rounded border border-neutral-400 bg-white shadow-sm transition duration-200 ease-out group-hover:border-neutral-600 group-hover:shadow-xl"
+                >
+                  <div class="flex items-center justify-between gap-2 px-4 pt-4">
+                    <span
+                      class="rounded border border-neutral-400 bg-neutral-100 px-2 py-0.5 font-mono text-xs font-medium text-neutral-800"
+                      >Status: Completed</span>
+                    <span class="shrink-0 font-mono text-xs text-neutral-500">#1</span>
+                  </div>
+                  <h3 id="proj-c-title" class="mt-3 px-4 font-mono text-lg font-semibold tracking-tight text-neutral-900">
+                    Project C - TBD
+                  </h3>
+                  <p class="mt-1 px-4 font-mono text-xs text-neutral-500">Completed 2025</p>
+                  <div
+                    class="mx-4 mt-4 flex aspect-video items-center justify-center bg-neutral-200 text-center font-mono text-xs tracking-wide text-neutral-600"
+                  >
+                    Project Image Placeholder
+                  </div>
+                  <p class="mt-4 mb-5 flex-1 px-4 text-sm leading-relaxed text-neutral-700">
+                    This placeholder stands in for a finished build you want readers to skim quickly. Summarise the
+                    outcome, one lesson you would repeat, and one thing you would change next time. The hero image
+                    above will eventually show the final hardware in context.
+                  </p>
+                  <footer class="mt-auto border-t border-neutral-200 bg-neutral-50 px-4 py-3">
+                    <p
+                      class="font-mono text-sm font-medium text-neutral-700 underline decoration-neutral-400 underline-offset-2 transition group-hover:text-neutral-900 group-hover:decoration-neutral-600"
+                    >
+                      Read full build log ↗
+                    </p>
+                  </footer>
+                </article>
+              </a>
+            </li>
+
+            <!-- Project A — active -->
+            <li>
+              <a
+                href="pro-02.html"
+                class="group block h-full rounded no-underline text-inherit outline-none ring-offset-2 transition focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                aria-labelledby="proj-a-title"
+              >
+                <article
+                  class="flex h-full flex-col overflow-hidden rounded border border-neutral-400 bg-white shadow-sm transition duration-200 ease-out group-hover:border-neutral-600 group-hover:shadow-xl"
+                >
+                  <div class="flex items-center justify-between gap-2 px-4 pt-4">
+                    <span
+                      class="rounded border border-neutral-400 bg-neutral-100 px-2 py-0.5 font-mono text-xs font-medium text-neutral-800"
+                      >Status: Active</span>
+                    <span class="shrink-0 font-mono text-xs text-neutral-500">#2</span>
+                  </div>
+                  <h3 id="proj-a-title" class="mt-3 px-4 font-mono text-lg font-semibold tracking-tight text-neutral-900">
+                    Project A - TBD
+                  </h3>
+                  <p class="mt-1 px-4 font-mono text-xs text-neutral-500">Jan 2026 - Present</p>
+                  <div
+                    class="mx-4 mt-4 flex aspect-video items-center justify-center bg-neutral-200 text-center font-mono text-xs tracking-wide text-neutral-600"
+                  >
+                    Project Image Placeholder
+                  </div>
+                  <p class="mt-4 mb-5 flex-1 px-4 text-sm leading-relaxed text-neutral-700">
+                    This is placeholder copy for an active robotics build. It will eventually describe the problem you
+                    set out to solve, the main hardware and software choices, and what “done” looks like for this
+                    project. Swap in real narrative once the log is ready to publish.
+                  </p>
+                  <footer class="mt-auto border-t border-neutral-200 bg-neutral-50 px-4 py-3">
+                    <p
+                      class="font-mono text-sm font-medium text-neutral-700 underline decoration-neutral-400 underline-offset-2 transition group-hover:text-neutral-900 group-hover:decoration-neutral-600"
+                    >
+                      Read full build log ↗
+                    </p>
+                  </footer>
+                </article>
+              </a>
+            </li>
+
+            <!-- Project B — planned -->
+            <li>
+              <a
+                href="pro-03.html"
+                class="group block h-full rounded no-underline text-inherit outline-none ring-offset-2 transition focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                aria-labelledby="proj-b-title"
+              >
+                <article
+                  class="flex h-full flex-col overflow-hidden rounded border border-neutral-400 bg-white shadow-sm transition duration-200 ease-out group-hover:border-neutral-600 group-hover:shadow-xl"
+                >
+                  <div class="flex items-center justify-between gap-2 px-4 pt-4">
+                    <span
+                      class="rounded border border-neutral-400 bg-neutral-100 px-2 py-0.5 font-mono text-xs font-medium text-neutral-800"
+                      >Status: Planned</span>
+                    <span class="shrink-0 font-mono text-xs text-neutral-500">#3</span>
+                  </div>
+                  <h3 id="proj-b-title" class="mt-3 px-4 font-mono text-lg font-semibold tracking-tight text-neutral-900">
+                    Project B - TBD
+                  </h3>
+                  <p class="mt-1 px-4 font-mono text-xs text-neutral-500">TBD</p>
+                  <div
+                    class="mx-4 mt-4 flex aspect-video items-center justify-center bg-neutral-200 text-center font-mono text-xs tracking-wide text-neutral-600"
+                  >
+                    Project Image Placeholder
+                  </div>
+                  <p class="mt-4 mb-5 flex-1 px-4 text-sm leading-relaxed text-neutral-700">
+                    This card holds space for a project that is still on paper or only partly scoped. Use a few
+                    sentences to hint at the idea, the constraints you expect, and why it belongs in the logbook.
+                    Replace this block when you have photos or a clearer timeline.
+                  </p>
+                  <footer class="mt-auto border-t border-neutral-200 bg-neutral-50 px-4 py-3">
+                    <p
+                      class="font-mono text-sm font-medium text-neutral-700 underline decoration-neutral-400 underline-offset-2 transition group-hover:text-neutral-900 group-hover:decoration-neutral-600"
+                    >
+                      Read full build log ↗
+                    </p>
+                  </footer>
+                </article>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Minimal contact anchor for nav completeness -->
+      <section
+        id="contact"
+        class="bg-neutral-50"
+        aria-labelledby="contact-heading"
+      >
+        <div class="mx-auto max-w-6xl px-4 py-7 sm:px-6 lg:px-8">
+          <h2 id="contact-heading" class="font-mono text-xs font-semibold uppercase tracking-widest text-neutral-600">
+            Contact
+          </h2>
+          <p class="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-700">
+            I am always open to talking about mechatronics, new projects, or anything you want to chat about. Feel free to reach out!
+          </p>
+          <div class="mt-4 flex flex-col gap-2">
+            <a
+              href="mailto:waghanvesh@gmail.com"
+              class="inline-flex w-fit rounded px-2 py-1 font-mono text-sm text-neutral-800 outline-none transition-colors duration-200 hover:bg-neutral-900 hover:text-white focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50"
+              >waghanvesh@gmail.com</a>
+            <a
+              href="tel:+447443792662"
+              class="inline-flex w-fit rounded px-2 py-1 font-mono text-sm text-neutral-800 outline-none transition-colors duration-200 hover:bg-neutral-900 hover:text-white focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50"
+              >+44 7443 792662</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-neutral-300 bg-white">
+      <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-6 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+        <p class="font-mono text-xs text-neutral-500">© Anvesh Wagh 2026</p>
+        <p class="font-mono text-xs text-neutral-500">Built with a lot of code and coffee.</p>
+      </div>
+    </footer>
+  </body>
+</html>
