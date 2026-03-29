@@ -18,7 +18,7 @@ I designed this site to be as lightweight and maintainable as possible, avoiding
 * `pro-01.html` - Template/Build Log for Project 01 (Reaction Wheel).
 * `pro-02.html` - Template/Build Log for Project 02 (Desktop CNC Mill).
 * `pro-03.html` - Template/Build Log for Project 03 (P1S Fume Extractor).
-* `assets/` - *(If you add one later)* Directory for local images, CAD renders, and videos.
+* `assets/` - Directory for local images, CAD renders, and videos.
 
 ## Running Locally
 
