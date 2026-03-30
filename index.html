@@ -45,10 +45,10 @@
 
 <body class="min-h-screen bg-neutral-50 text-neutral-900 antialiased">
   <a href="#main"
-    class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:border focus:border-neutral-400 focus:bg-white focus:px-3 focus:py-2 focus:text-sm">Skip
+    class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:border focus:border-red-500 focus:bg-white focus:text-red-700 focus:px-3 focus:py-2 focus:text-sm">Skip
     to main content</a>
 
-  <header class="border-b border-neutral-300 bg-white">
+  <header class="border-b-2 border-red-600 bg-white">
     <div
       class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
       <div class="flex flex-col gap-1">
@@ -60,19 +60,19 @@
       <nav aria-label="Primary">
         <ul class="flex flex-wrap gap-x-1 gap-y-2 font-mono text-sm">
           <li>
-            <a class="inline-block rounded-md px-3 py-1.5 text-neutral-700 outline-none transition-all duration-200 hover:bg-neutral-900 hover:text-white focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            <a class="inline-block rounded-md px-3 py-1.5 text-neutral-700 outline-none transition-all duration-200 hover:bg-red-600 hover:text-white focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               href="#">Overview</a>
           </li>
           <li>
-            <a class="inline-block rounded-md px-3 py-1.5 text-neutral-700 outline-none transition-all duration-200 hover:bg-neutral-900 hover:text-white focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            <a class="inline-block rounded-md px-3 py-1.5 text-neutral-700 outline-none transition-all duration-200 hover:bg-red-600 hover:text-white focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               href="#workspace">Workspace</a>
           </li>
           <li>
-            <a class="inline-block rounded-md px-3 py-1.5 text-neutral-700 outline-none transition-all duration-200 hover:bg-neutral-900 hover:text-white focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            <a class="inline-block rounded-md px-3 py-1.5 text-neutral-700 outline-none transition-all duration-200 hover:bg-red-600 hover:text-white focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               href="#logbook">Logbook</a>
           </li>
           <li>
-            <a class="inline-block rounded-md px-3 py-1.5 text-neutral-700 outline-none transition-all duration-200 hover:bg-neutral-900 hover:text-white focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+            <a class="inline-block rounded-md px-3 py-1.5 text-neutral-700 outline-none transition-all duration-200 hover:bg-red-600 hover:text-white focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               href="#contact">Contact</a>
           </li>
         </ul>
@@ -82,7 +82,7 @@
 
   <main id="main">
     <!-- Hero: intro + feature highlights + image placeholder -->
-    <section id="hero" class="border-b border-neutral-300 bg-white" aria-labelledby="hero-heading">
+    <section id="hero" class="border-b border-neutral-200 bg-white" aria-labelledby="hero-heading">
       <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <div class="grid gap-10 lg:grid-cols-12 lg:gap-12">
           <div class="lg:col-span-7">
@@ -98,18 +98,18 @@
               my bedroom.
             </p>
             <ul class="mt-8 grid gap-3 sm:grid-cols-2" role="list">
-              <li class="flex gap-3 rounded border border-neutral-300 bg-neutral-50 p-4">
-                <span class="font-mono text-xs text-neutral-500" aria-hidden="true">01</span>
+              <li class="flex gap-3 rounded border border-neutral-200 border-l-2 border-l-red-600 bg-neutral-50 p-4">
+                <span class="font-mono text-xs text-red-600" aria-hidden="true">01</span>
                 <span class="text-sm text-neutral-800">I predominantly focus on mechatronics, custom PCBs, and control
                   theory.</span>
               </li>
-              <li class="flex gap-3 rounded border border-neutral-300 bg-neutral-50 p-4">
-                <span class="font-mono text-xs text-neutral-500" aria-hidden="true">02</span>
+              <li class="flex gap-3 rounded border border-neutral-200 border-l-2 border-l-red-600 bg-neutral-50 p-4">
+                <span class="font-mono text-xs text-red-600" aria-hidden="true">02</span>
                 <span class="text-sm text-neutral-800">I use 3D printing, Python and hand-soldered electronics to make
                   my projects tangible.</span>
               </li>
-              <li class="flex gap-3 rounded border border-neutral-300 bg-neutral-50 p-4 sm:col-span-2">
-                <span class="font-mono text-xs text-neutral-500" aria-hidden="true">03</span>
+              <li class="flex gap-3 rounded border border-neutral-200 border-l-2 border-l-red-600 bg-neutral-50 p-4 sm:col-span-2">
+                <span class="font-mono text-xs text-red-600" aria-hidden="true">03</span>
                 <span class="text-sm text-neutral-800">Building hardware is rarely perfect on the first try. This site
                   is an open logbook documenting the real-world process of trial, error, and final working
                   iterations.</span>
@@ -133,7 +133,7 @@
     </section>
 
     <!-- Workspace / MakerSpace -->
-    <section id="workspace" class="border-b border-neutral-300 bg-neutral-50" aria-labelledby="workspace-heading">
+    <section id="workspace" class="border-b border-neutral-200 bg-neutral-50" aria-labelledby="workspace-heading">
       <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         <header class="max-w-3xl">
           <p class="font-mono text-xs uppercase tracking-widest text-neutral-500">MakerSpace</p>
@@ -148,20 +148,20 @@
         </header>
 
         <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
-          <article class="rounded border border-neutral-300 bg-white p-6">
-            <h3 class="font-mono text-xs font-semibold uppercase tracking-wider text-neutral-600">
+          <article class="rounded border border-neutral-200 border-t-2 border-t-red-600 bg-white p-6 shadow-sm">
+            <h3 class="font-mono text-xs font-semibold uppercase tracking-wider text-red-700">
               3D Printing
             </h3>
             <p class="mt-3 text-sm leading-relaxed text-neutral-700">
               I use 3D printing to rapidly iterate on mechanical components, and having a micro-factory on my desk means
               I can turn a late-night idea into a prototype I can test by morning. You can see my CAD here on
               <a href="https://makerworld.com/en/@Anvesh_Wagh"
-                class="font-medium text-neutral-900 underline decoration-neutral-400 underline-offset-2 transition hover:decoration-neutral-700"
+                class="font-medium text-red-700 underline decoration-red-300 underline-offset-2 transition hover:decoration-red-600 hover:text-red-800"
                 rel="noopener noreferrer" target="_blank">MakerWorld</a>.
             </p>
           </article>
-          <article class="rounded border border-neutral-300 bg-white p-6">
-            <h3 class="font-mono text-xs font-semibold uppercase tracking-wider text-neutral-600">
+          <article class="rounded border border-neutral-200 border-t-2 border-t-red-600 bg-white p-6 shadow-sm">
+            <h3 class="font-mono text-xs font-semibold uppercase tracking-wider text-red-700">
               Desktop CNC &amp; PCBs
             </h3>
             <p class="mt-3 text-sm leading-relaxed text-neutral-700">
@@ -169,8 +169,8 @@
               copper-clad boards directly in my room. I could also upgrade this later to cut actual materials.
             </p>
           </article>
-          <article class="rounded border border-neutral-300 bg-white p-6">
-            <h3 class="font-mono text-xs font-semibold uppercase tracking-wider text-neutral-600">
+          <article class="rounded border border-neutral-200 border-t-2 border-t-red-600 bg-white p-6 shadow-sm">
+            <h3 class="font-mono text-xs font-semibold uppercase tracking-wider text-red-700">
               Electronics &amp; Soldering
             </h3>
             <p class="mt-3 text-sm leading-relaxed text-neutral-700">
@@ -179,15 +179,15 @@
               before putting them into the robots.
             </p>
           </article>
-          <article class="rounded border border-neutral-300 bg-white p-6">
-            <h3 class="font-mono text-xs font-semibold uppercase tracking-wider text-neutral-600">
+          <article class="rounded border border-neutral-200 border-t-2 border-t-red-600 bg-white p-6 shadow-sm">
+            <h3 class="font-mono text-xs font-semibold uppercase tracking-wider text-red-700">
               Software &amp; Code
             </h3>
             <p class="mt-3 text-sm leading-relaxed text-neutral-700">
               Hardware is only half the battle. I write the firmware for my robots using Python, and I use version
               control to keep track of my iterations. You can look through all the source code for my builds on my
               <a href="https://github.com/tiger101anvesh"
-                class="font-medium text-neutral-900 underline decoration-neutral-400 underline-offset-2 transition hover:decoration-neutral-700"
+                class="font-medium text-red-700 underline decoration-red-300 underline-offset-2 transition hover:decoration-red-600 hover:text-red-800"
                 rel="noopener noreferrer" target="_blank">GitHub</a>.
             </p>
           </article>
@@ -206,7 +206,7 @@
     </section>
 
     <!-- Projects: spec-sheet cards, scalable grid -->
-    <section id="logbook" class="border-b border-neutral-300 bg-white" aria-labelledby="logbook-heading">
+    <section id="logbook" class="border-b border-neutral-200 bg-white" aria-labelledby="logbook-heading">
       <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         <header class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div class="max-w-2xl">
@@ -231,10 +231,10 @@
               class="group block h-full rounded no-underline text-inherit outline-none ring-offset-2 transition focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               aria-labelledby="proj-A-title">
               <article
-                class="flex h-full flex-col overflow-hidden rounded border border-neutral-400 bg-white shadow-sm transition duration-200 ease-out group-hover:border-neutral-600 group-hover:shadow-xl">
+                class="flex h-full flex-col overflow-hidden rounded border border-neutral-200 border-t-4 border-t-red-600 bg-white shadow-md transition duration-200 ease-out group-hover:shadow-xl">
                 <div class="flex items-center justify-between gap-2 px-4 pt-4">
                   <span
-                    class="rounded border border-neutral-400 bg-neutral-100 px-2 py-0.5 font-mono text-xs font-medium text-neutral-800">Status:
+                    class="rounded border border-red-200 bg-red-50 px-2 py-0.5 font-mono text-xs font-medium text-red-700">Status:
                     Completed</span>
                   <span class="shrink-0 font-mono text-xs text-neutral-500">#1</span>
                 </div>
@@ -251,9 +251,9 @@
                   outcome, one lesson you would repeat, and one thing you would change next time. The hero image
                   above will eventually show the final hardware in context.
                 </p>
-                <footer class="mt-auto border-t border-neutral-200 bg-neutral-50 px-4 py-3">
+                <footer class="mt-auto border-t border-red-100 bg-red-50 px-4 py-3">
                   <p
-                    class="font-mono text-sm font-medium text-neutral-700 underline decoration-neutral-400 underline-offset-2 transition group-hover:text-neutral-900 group-hover:decoration-neutral-600">
+                    class="font-mono text-sm font-medium text-red-700 underline decoration-red-300 underline-offset-2 transition group-hover:text-red-900 group-hover:decoration-red-600">
                     Read full build log ↗
                   </p>
                 </footer>
@@ -267,10 +267,10 @@
               class="group block h-full rounded no-underline text-inherit outline-none ring-offset-2 transition focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               aria-labelledby="proj-B-title">
               <article
-                class="flex h-full flex-col overflow-hidden rounded border border-neutral-400 bg-white shadow-sm transition duration-200 ease-out group-hover:border-neutral-600 group-hover:shadow-xl">
+                class="flex h-full flex-col overflow-hidden rounded border border-neutral-200 border-t-4 border-t-red-600 bg-white shadow-md transition duration-200 ease-out group-hover:shadow-xl">
                 <div class="flex items-center justify-between gap-2 px-4 pt-4">
                   <span
-                    class="rounded border border-neutral-400 bg-neutral-100 px-2 py-0.5 font-mono text-xs font-medium text-neutral-800">Status:
+                    class="rounded border border-red-200 bg-red-50 px-2 py-0.5 font-mono text-xs font-medium text-red-700">Status:
                     Active</span>
                   <span class="shrink-0 font-mono text-xs text-neutral-500">#2</span>
                 </div>
@@ -287,9 +287,9 @@
                   set out to solve, the main hardware and software choices, and what “done” looks like for this
                   project. Swap in real narrative once the log is ready to publish.
                 </p>
-                <footer class="mt-auto border-t border-neutral-200 bg-neutral-50 px-4 py-3">
+                <footer class="mt-auto border-t border-red-100 bg-red-50 px-4 py-3">
                   <p
-                    class="font-mono text-sm font-medium text-neutral-700 underline decoration-neutral-400 underline-offset-2 transition group-hover:text-neutral-900 group-hover:decoration-neutral-600">
+                    class="font-mono text-sm font-medium text-red-700 underline decoration-red-300 underline-offset-2 transition group-hover:text-red-900 group-hover:decoration-red-600">
                     Read full build log ↗
                   </p>
                 </footer>
@@ -303,10 +303,10 @@
               class="group block h-full rounded no-underline text-inherit outline-none ring-offset-2 transition focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               aria-labelledby="proj-C-title">
               <article
-                class="flex h-full flex-col overflow-hidden rounded border border-neutral-400 bg-white shadow-sm transition duration-200 ease-out group-hover:border-neutral-600 group-hover:shadow-xl">
+                class="flex h-full flex-col overflow-hidden rounded border border-neutral-200 border-t-4 border-t-red-600 bg-white shadow-md transition duration-200 ease-out group-hover:shadow-xl">
                 <div class="flex items-center justify-between gap-2 px-4 pt-4">
                   <span
-                    class="rounded border border-neutral-400 bg-neutral-100 px-2 py-0.5 font-mono text-xs font-medium text-neutral-800">Status:
+                    class="rounded border border-red-200 bg-red-50 px-2 py-0.5 font-mono text-xs font-medium text-red-700">Status:
                     Planned</span>
                   <span class="shrink-0 font-mono text-xs text-neutral-500">#3</span>
                 </div>
@@ -323,9 +323,9 @@
                   sentences to hint at the idea, the constraints you expect, and why it belongs in the logbook.
                   Replace this block when you have photos or a clearer timeline.
                 </p>
-                <footer class="mt-auto border-t border-neutral-200 bg-neutral-50 px-4 py-3">
+                <footer class="mt-auto border-t border-red-100 bg-red-50 px-4 py-3">
                   <p
-                    class="font-mono text-sm font-medium text-neutral-700 underline decoration-neutral-400 underline-offset-2 transition group-hover:text-neutral-900 group-hover:decoration-neutral-600">
+                    class="font-mono text-sm font-medium text-red-700 underline decoration-red-300 underline-offset-2 transition group-hover:text-red-900 group-hover:decoration-red-600">
                     Read full build log ↗
                   </p>
                 </footer>
@@ -347,17 +347,17 @@
           reach out!
         </p>
         <div class="mt-4 flex flex-col gap-2">
-          <a href="mailto:waghanvesh@gmail.com"
-            class="inline-flex w-fit rounded px-2 py-1 font-mono text-sm text-neutral-800 outline-none transition-colors duration-200 hover:bg-neutral-900 hover:text-white focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50">waghanvesh@gmail.com</a>
+            <a href="mailto:waghanvesh@gmail.com"
+            class="inline-flex w-fit rounded px-2 py-1 font-mono text-sm text-neutral-800 outline-none transition-colors duration-200 hover:bg-red-600 hover:text-white focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50">waghanvesh@gmail.com</a>
           <a href="tel:+447443792662"
-            class="inline-flex w-fit rounded px-2 py-1 font-mono text-sm text-neutral-800 outline-none transition-colors duration-200 hover:bg-neutral-900 hover:text-white focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50">+44
+            class="inline-flex w-fit rounded px-2 py-1 font-mono text-sm text-neutral-800 outline-none transition-colors duration-200 hover:bg-red-600 hover:text-white focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50">+44
             7443 792662</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-neutral-300 bg-white">
+  <footer class="border-t border-neutral-200 bg-white">
     <div
       class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-6 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
       <p class="font-mono text-xs text-neutral-500">© Anvesh Wagh 2026</p>
